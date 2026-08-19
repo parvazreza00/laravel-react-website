@@ -10,6 +10,6 @@ class ChartController extends Controller
 {
     public function onAllSelect(){
         $chartdata = Chart::all();
-        return $chartdata;
+        return response()->json($chartdata);
     }
 }
